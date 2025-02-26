@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClientsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -11,3 +12,4 @@ Route::get('/', function () {
 });
 
 Route::resource('users', UserController::class);
+Route::resource('clients', ClientsController::class);
